@@ -1,8 +1,6 @@
 import axios from "axios";
 import { useEffect } from "react";
 const AuthPage = (props) => {
-  // let user = localStorage.getItem("username");
-
   const onSubmit = async (e) => {
     e.preventDefault();
     const { value } = e.target[0];
