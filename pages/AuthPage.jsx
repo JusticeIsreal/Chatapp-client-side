@@ -5,7 +5,7 @@ const AuthPage = (props) => {
     e.preventDefault();
     const { value } = e.target[0];
     const data = await axios
-      .post("http://localhost:2222/api/v1/authusers/signup", {
+      .post("/api/server", {
         username: value,
       })
       .then((response) => {
